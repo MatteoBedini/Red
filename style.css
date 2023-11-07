@@ -8,6 +8,10 @@ h1{
        
 }
 
+body{
+    padding: 0;
+    margin:0;
+}
 
 /* root */
 :root{
@@ -68,6 +72,7 @@ body{
 }
 .navbar{
     z-index: 10;
+    
 }
 .nav-custom{
     background-color: #ececec;
@@ -75,17 +80,27 @@ body{
     width: 100%;
     position: fixed;
     top: 0%;
-   
-    
     
 }
 
-
 .nav-item{
-margin-right: 100px;
-margin-left: 40px;
+    margin: 0 30px;
+}
 
+.nav-link{
+    color: var(--accent);
+    border-radius: 5px;
+    transition:0.3s;
 
+}
+.nav-link:hover{
+    background-color: var(--accent);
+    color: var(--main);
+    
+}
+
+.nav-link:active{
+    background-color: var(--sec);
 }
 
 /* header */
@@ -100,22 +115,7 @@ margin-left: 40px;
 
 }
 
-/* .ps::before{
-    content: '"';
-    font-size: 200%;
-    color: var(--accent);
-    background: url(https://fontawesome.com/icons/quote-left?f=classic&s=solid);
 
-
-   
-}
-.ps::after{
-    content: '"';
-    font-size: 200%;
-    color: var(--accent);
-   
-   
-} */
 
 .virgolette{
     position: relative;
@@ -200,11 +200,25 @@ margin-left: 40px;
 }
 
 .immagine-fine{
-    width: 100vw;
+    background-image: url(media/other.png);
+    background-repeat: no-repeat;
+    background-size : 100vw 100%;
+
+    background-position: bottom;
+    
+    height: 60vh;
+    
 
     
 }
+/* footer link */
+.footer-link{
+    text-decoration: none;
+}
 
+.footer-link-list{
+    list-style-type: none;
+}
 
 
 
